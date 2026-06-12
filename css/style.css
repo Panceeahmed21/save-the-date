@@ -1,0 +1,687 @@
+/* header{
+    background-image: url("../images/bg.png");
+    background-position:  center;
+    background-size: cover;
+    
+}
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+} */
+
+/* @keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-1750px);
+    }
+}
+
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: 3500px;
+}
+
+.slider .slide {
+    height: 100%;
+    width: 250px;
+}
+
+.slider .slide img {
+    height: 100%;
+    object-fit: cover;
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fdf9f9;
+}
+
+/* ================= Hero ================= */
+
+.hero-section {
+    min-height: 100vh;
+    padding: 6% 5%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/bg\ \(2\).png");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navbar a,
+.music {
+    text-decoration: none;
+    color: #9a4d5f;
+    font-size: clamp(0.75rem, 1vw, 0.9rem);
+    letter-spacing: 0.2em;
+}
+
+.navbar li:first-child a {
+    border-bottom: 2px solid #d4aab2;
+    padding-bottom: 0.5rem;
+}
+
+/* ================= Hero Content ================= */
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+/* ================= Hero Text ================= */
+
+.hero-text {
+    flex: 1 1 45%;
+    color: #9a4d5f;
+}
+
+.family-text {
+    display: block;
+    letter-spacing: 0.35em;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    margin-bottom: 2rem;
+}
+
+.hero-text h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.divider span {
+    width: 6rem;
+    height: 1px;
+    background-color: #d4aab2;
+}
+
+.divider i {
+    font-style: normal;
+}
+
+.invitation-text {
+    letter-spacing: 0.25em;
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    margin-bottom: 2rem;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.date span {
+    font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
+.line {
+    width: 1px;
+    height: 2rem;
+    background-color: #d4aab2;
+}
+
+/* ================= Button ================= */
+
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    border: 1px solid #d4aab2;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #9a4d5f;
+    letter-spacing: 0.2em;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #9a4d5f;
+    color: white;
+}
+
+/* ================= Hero Image ================= */
+
+.hero-image {
+    flex: 1 1 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: min(100%, 48rem);
+    height: auto;
+    display: block;
+}
+
+/* ================= Scroll ================= */
+
+.scroll-down {
+    text-align: center;
+    color: #9a4d5f;
+    font-size: clamp(2rem, 3vw, 3rem);
+    animation: bounce 1.5s infinite;
+    margin-top: 1rem;
+}
+
+@keyframes bounce {
+
+    50% {
+        transform: translateY(10px);
+    }
+
+}
+.hero-section {
+    min-height: 100vh;
+    padding: 2% 5%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/bg (2).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+}
+/* ================= Responsive ================= */
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        min-height: 100svh;
+        padding: 2rem 1rem;
+        background-size: 95%;
+        background-position: bottom right;
+      
+        background-image: none;
+    
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .hero-content {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-text {
+        flex: 0 0 100%;
+    }
+
+    .family-text {
+        letter-spacing: 0.25em;
+        font-size: 0.75rem;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(3rem, 12vw, 4.5rem);
+        margin-bottom: 1.5rem;
+    }
+
+    .divider {
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .divider span {
+        width: 4rem;
+    }
+
+    .invitation-text {
+        font-size: 0.85rem;
+        letter-spacing: 0.15em;
+        line-height: 1.8;
+    }
+
+    .date {
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .date span {
+        font-size: 0.9rem;
+    }
+
+    .scroll-down {
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .hero-section {
+        background-size: 110%;
+        background-position: bottom right;
+    }
+
+    .navbar ul {
+        gap: 1rem;
+    }
+
+    .navbar a,
+    .music a {
+        font-size: 0.7rem;
+        letter-spacing: 0.15em;
+    }
+
+    .hero-text h1 {
+        font-size: 2.8rem;
+    }
+
+    .family-text,
+    .invitation-text {
+        font-size: 0.7rem;
+    }
+
+    .date span {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.our-story {
+    background-color: #fdf9f9;
+    color: #9a4d5f;
+}
+
+.section-subtitle {
+    display: block;
+    letter-spacing: 5px;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.story-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+
+.title-divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #d4aab2;
+    margin-bottom: 2rem;
+}
+
+.title-divider span {
+    width: 70px;
+    height: 1px;
+    background-color: #d4aab2;
+}
+
+.story-text {
+    color: #555;
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.story-quote {
+    font-family: "Cormorant Garamond", serif;
+    color: #d4aab2;
+    font-size: 1.4rem;
+    font-style: italic;
+    border-left: 3px solid #f1d8dd;
+    padding-left: 1.5rem;
+    margin-top: 2rem;
+}
+
+.story-image {
+    display: inline-block;
+}
+
+.main-img {
+    border: 10px solid white;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.tape {
+    width: 90px;
+    height: 25px;
+    background-color: rgba(244, 202, 208, 0.7);
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-3deg);
+}
+
+.flower {
+    position: absolute;
+    color: #f1d8dd;
+    font-size: 3rem;
+}
+
+.flower-left {
+    top: -20px;
+    left: -30px;
+}
+
+.flower-right {
+    bottom: -20px;
+    right: -30px;
+}
+
+@media (max-width: 992px) {
+
+    .our-story {
+        text-align: center;
+    }
+
+    .title-divider {
+        justify-content: center;
+    }
+
+    .story-quote {
+        border-left: none;
+        border-top: 3px solid #f1d8dd;
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+
+    .story-image {
+        display: block;
+        max-width: 450px;
+        margin: auto;
+    }
+}
+
+
+
+.story-timeline {
+    background-color: #fdf9f9;
+    color: #9a4d5f;
+}
+
+.timeline-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    margin-bottom: 1rem;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.divider span {
+    width: 70px;
+    height: 1px;
+    background-color: #d4aab2;
+}
+
+.divider i {
+    color: #d4aab2;
+}
+
+
+
+.row.position-relative {
+    position: relative;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 35px;
+    left: 15%;
+    width: 70%;
+    height: 2px;
+    border-top: 2px dashed #d4aab2;
+    z-index: 1;
+}
+
+/* العناصر */
+
+.timeline-item {
+    position: relative;
+    z-index: 2;
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background-color: #d4aab2;
+    color: white;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.5rem;
+}
+
+.timeline-item h5 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-item p {
+    color: #666;
+    max-width: 250px;
+    margin: auto;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+
+
+
+.timeline-image {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 6px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+
+    transform: rotate(-2deg);
+
+    transition: .4s;
+}
+
+.timeline-item:nth-child(3) .timeline-image {
+    transform: rotate(2deg);
+}
+
+.timeline-image:hover {
+    transform: rotate(0) scale(1.05);
+}
+
+.timeline-image img {
+    width: 100%;
+    display: block;
+}
+
+.caption {
+    display: block;
+    margin-top: 1rem;
+    color: #999;
+    font-style: italic;
+}
+
+
+
+@media (max-width: 991px) {
+
+    .timeline-line {
+        display: none;
+    }
+
+    .timeline-item {
+        margin-bottom: 4rem;
+    }
+
+    .timeline-image {
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .timeline-image {
+        width: 85%;
+    }
+
+    .timeline-item h5 {
+        font-size: 1.7rem;
+    }
+
+}
+
+
+
+.OVERLAY{
+    position: fixed;
+    /* background-image: url("../images/just\ married\ .png"); */
+    inset: 0;
+    z-index: 99999;
+    background-size: cover ;
+    background-position: center;
+    background-color: #9a4d5f;
+}
+
+.loader span{
+    
+animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+          transform: rotate(360deg);
+    }
+}
+
