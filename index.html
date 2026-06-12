@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap"
         rel="stylesheet">
@@ -22,28 +28,50 @@
         </div>
     </div>
 
-    <header class="hero-section">
+    <header class="hero-section" id="home">
 
-        <nav class="navbar">
+        <nav class="navbar navbar-expand-lg fixed-top py-3">
+            <div class="container">
 
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#our_stroy">OUR STORY</a></li>
-                <li><a href="#details">DETAILS</a></li>
-                <li><a href="#">GALLERY</a></li>
-            </ul>
+                <!-- Navbar Toggler -->
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
 
-            <!-- <div class="music">
-                <a target="_blank" href="https://www.youtube.com/watch?v=cNGjD0VG4R8"> 🎵 Ed Sheeran - Perfect</a>
-            </div> -->
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
 
-            <div class="song-btn">
-                <a target="_blank" href="https://www.youtube.com/watch?v=cNGjD0VG4R8"> <i class="fa-solid fa-play"></i>
-                    Ed Sheeran – Perfect</a>
+                    <ul class="navbar-nav gap-lg-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">HOME</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#story">OUR STORY</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#memories">MEMORIES</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#invitation">INVITATION</a>
+                        </li>
+                    </ul>
+
+                    <!-- Song Button -->
+                    <div class="song-btn mt-3 mt-lg-0">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=cNGjD0VG4R8">
+                            <i class="fa-solid fa-play me-2"></i>
+                            Ed Sheeran – Perfect
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </nav>
-
-        <div class="hero-content">
+        <div class="hero-content" id="home">
 
             <div class="hero-text">
 
@@ -93,7 +121,7 @@
 
     </header>
 
-    <section class="our-story py-5" id="our_stroy">
+    <section class="our-story py-5" id="story">
         <div class="container">
 
             <div class="row align-items-center g-5">
@@ -232,46 +260,228 @@
 
         </div>
     </section>
-    <!-- <div class="slider">
-        <div class="slide-track">
-            <div class="slide">
-                <img src="./images/IMG-20260609-WA0010.jpg" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="./images/IMG-20260609-WA0018.jpg" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="./images/IMG-20260609-WA0012.jpg" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="./images/IMG-20260609-WA0014.jpg" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="./images/IMG-20260609-WA0019.jpg" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="./images/IMG-20260609-WA0020.jpg" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="./images/IMG-20260609-WA0018.jpg" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="./images/IMG-20260609-WA0014.jpg" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="./images/IMG-20260609-WA0019.jpg" width="250" alt="" />
+
+
+
+    <!-- ===== OUR STORY ===== -->
+    <section class="our-story" id="memories">
+        <div class="container">
+
+            <div class="section-title">
+                <span>OUR STORY</span>
+                <h2>Two Different Paths,<br>One Beautiful Destiny</h2>
             </div>
 
-            <div class="slide">
-                <img src="./images/IMG-20260609-WA0012.jpg" width="250" alt="" />
+            <div class="story-wrapper">
+
+                <!-- THEN -->
+                <div class="story-card">
+                    <span class="story-label">Then</span>
+
+                    <div class="story-image">
+                        <img src="images/IMG-20260609-WA0025.jpg" alt="Salma & Alaa as children">
+                    </div>
+
+                    <p>
+                        We were just two little souls,
+                        growing up in different worlds,
+                        chasing our own dreams,
+                        never knowing that life was quietly
+                        writing our story.
+                    </p>
+                </div>
+
+                <!-- CENTER CONTENT -->
+                <div class="story-content">
+
+                    <div class="divider">
+                        <span>♥</span>
+                    </div>
+
+                    <p>
+                        We didn't know each other.
+                        We didn't know where life would take us.
+                    </p>
+
+                    <p>
+                        Years passed...
+                        We grew, we changed,
+                        and life led us down different paths.
+                    </p>
+
+                    <p>
+                        Until one day,
+                        those paths crossed in the most beautiful way.
+                    </p>
+
+                    <h3>
+                        What we couldn't find then,
+                        we found now.
+                    </h3>
+
+                    <div class="forever">
+                        Our Forever Begins Here
+                    </div>
+
+                </div>
+
+                <!-- NOW -->
+                <div class="story-card">
+                    <span class="story-label">Now</span>
+
+                    <div class="story-image">
+                        <img src="images/IMG_20260612_154000.jpg" alt="Salma & Alaa">
+                    </div>
+
+                    <p>
+                        Two hearts,
+                        one unexpected meeting,
+                        and a love story that was always
+                        meant to be.
+                    </p>
+                </div>
+
             </div>
-            <div class="slide">
-                <img src="./images/IMG-20260609-WA0014.jpg" width="250" alt="" />
+
+        </div>
+    </section>
+
+
+
+
+
+    <section class="gallery-section">
+
+        <div class="section-heading">
+            <span>OUR MEMORIES</span>
+
+            <h2>A Collection of Our Favorite Moments</h2>
+
+            <p>
+                Some moments are too beautiful to be kept only in our hearts.
+                Here's a glimpse of the memories that brought us here.
+            </p>
+        </div>
+
+
+        <div class="swiper memoriesSwiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="images/slider 1 .jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/slider 2 .jpg" alt="">
+
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/slider 6 .jpg" alt="">
+
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/slider 4 .jpg" alt="">
+
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/slider 5 .jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/slider 3 .jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/slider 77 .jpg" alt="">
+                </div>
+
             </div>
         </div>
-    </div> -->
 
 
+        <div class="gallery-footer">
+            Every picture tells a story,
+            but our favorite one is the story
+            we're still writing together.
+        </div>
+
+    </section>
+
+    <section class="celebrate-section" id="invitation">
+        <div class="celebrate-container">
+
+            <!-- Left Image -->
+            <div class="celebrate-image left-image">
+                <img src="images/slider 3 .jpg" alt="Salma & Alaa">
+            </div>
+
+            <!-- Center Content -->
+            <div class="celebrate-content">
+
+                <div class="small-title">
+                    <span></span>
+                    CELEBRATE WITH US
+                    <span></span>
+                </div>
+
+                <h2>You're Invited</h2>
+
+                <p>
+                    With joyful hearts, we invite you to celebrate
+                    the beginning of our forever.
+                </p>
+
+                <div class="divider">
+                    <span></span>
+                    <i class="fa-solid fa-heart"></i>
+                    <span></span>
+                </div>
+
+                <p>
+                    Our happiness would not be complete without
+                    your <span class="highlight">love, laughter,</span>
+                    and <span class="highlight">presence</span>
+                    beside us.
+                </p>
+
+                <div class="divider">
+                    <span></span>
+                    <i class="fa-solid fa-heart"></i>
+                    <span></span>
+                </div>
+
+                <p>
+                    Join us as we create memories,
+                    share laughter, and celebrate this beautiful
+                    chapter of our lives together.
+                </p>
+
+                <h3>
+                    We can't wait to celebrate with you.
+                </h3>
+
+            </div>
+
+            <!-- Right Image -->
+            <div class="celebrate-image right-image">
+                <img src="images/slider 5 .jpg" alt="Together Forever">
+            </div>
+
+        </div>
+
+        <div class="bottom-text">
+            <span></span>
+            OUR JOY IS INCOMPLETE WITHOUT YOU
+            <span></span>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
