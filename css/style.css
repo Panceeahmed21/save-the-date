@@ -247,7 +247,6 @@ body {
     display: block;
 }
 
-/* ================= Scroll ================= */
 
 .scroll-down {
     text-align: center;
@@ -266,7 +265,7 @@ body {
 }
 .hero-section {
     min-height: 100vh;
-    padding: 2% 5%;
+    padding: 2% 4%;
     padding-bottom: 10%;
     display: flex;
     flex-direction: column;
@@ -275,7 +274,6 @@ body {
     background-size: cover;
     background-position: center right;
 }
-/* ================= Responsive ================= */
 
 @media (max-width: 768px) {
 
@@ -287,6 +285,9 @@ body {
       
         background-image: none;
     
+    }
+    .navbar ul {
+        padding-left: 0;
     }
 
     .navbar {
@@ -386,23 +387,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .our-story {
     background-color: #fdf9f9;
     color: #9a4d5f;
@@ -490,6 +474,10 @@ body {
 
 @media (max-width: 992px) {
 
+    .hero-section {
+        background-image: none;
+    }
+
     .our-story {
         text-align: center;
     }
@@ -557,7 +545,6 @@ body {
     z-index: 1;
 }
 
-/* العناصر */
 
 .timeline-item {
     position: relative;
@@ -663,7 +650,6 @@ body {
 
 .OVERLAY{
     position: fixed;
-    /* background-image: url("../images/just\ married\ .png"); */
     inset: 0;
     z-index: 99999;
     background-size: cover ;
